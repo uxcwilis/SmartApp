@@ -39,7 +39,7 @@ public class SessionManager {
         editor.putBoolean(IS_LOGGED_IN,true);
         editor.putString(ID_USER,user.getIdUser());
         editor.putString(USERNAME,user.getUsername());
-        //editor.putString(PASSWORD,user.getPassword());
+        editor.putString(PASSWORD,user.getPassword());
         editor.putString(NAMA_LENGKAP,user.getNamaLengkap());
         editor.putString(EMAIL,user.getEmail());
         editor.putString(NO_HP,user.getNoHp());
@@ -50,7 +50,7 @@ public class SessionManager {
         HashMap<String,String> user = new HashMap<>();
         user.put(ID_USER,sharedPreferences.getString(ID_USER,null));
         user.put(USERNAME,sharedPreferences.getString(USERNAME,null));
-       // user.put(PASSWORD,sharedPreferences.getString(PASSWORD,null));
+        user.put(PASSWORD,sharedPreferences.getString(PASSWORD,null));
         user.put(NAMA_LENGKAP,sharedPreferences.getString(NAMA_LENGKAP,null));
         user.put(EMAIL,sharedPreferences.getString(EMAIL,null));
         user.put(NO_HP,sharedPreferences.getString(NO_HP,null));
